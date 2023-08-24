@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: store-app
+  labels:
+    component: store
+spec:
+  containers:
+    - name: store
+      image: szezecinski/store-app:v1
+      ports:
+        - containerPort: 80
